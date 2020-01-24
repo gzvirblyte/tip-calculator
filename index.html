@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arbatpinigių skaičiuoklė</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header class="top">
+                <h3>Arbatpinigių skaičiuoklė</h3>
+            </header>
+            <main>
+                <form name="form" action="#">
+                    <ul>
+                        <li>
+                            <label for="amount">Sąskaitos suma:</label>
+                            <input type="text" id="amount" name="amount" placeholder="Sąskaitos suma (eur)">
+                        </li>
+                        <li>
+                            <label for="service-eval">Įvertinkite aptarnavimą:</label>
+                            <select name="service-eval" id="service-eval">
+                                <option value="0">--Pasirinkite--</option>
+                                <option value="30">30% - Puikus</option>
+                                <option value="20">20% - Labai geras</option>
+                                <option value="10">10% - Geras</option>
+                                <option value="5">5% - Prastas</option>
+                                <option value="1">1% - Itin blogas</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="number-of-people">Žmonių skaičius:</label>
+                            <input type="text" id="number-of-people" name="number-of-people" placeholder="Žmonių skaičius">
+                        </li>
+                    </ul>
+                </form>
+                <button>SKAIČIUOK</button>
+            </main>
+            <footer id="footer" class="bottom">
+                <p>Arbatpinigiai</p>
+                <p id="tip"></p>
+                <p>kiekvienam!</p>
+            </footer>
+
+        </div>
+    </main>
+</body>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="JS/main.js"></script>
+
+</html>

@@ -1,0 +1,117 @@
+body {
+    background-color: #00c6f7;
+    background-image: url(http://www.transparenttextures.com/patterns/gray-sand.png);
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    width: 350px;
+    height: 475px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(96, 107, 125, 0.7);
+}
+
+.top,
+.bottom {
+    text-align: center;
+    margin: -0.1px -0.1px 2em -0.1px;
+    background-color: #194d59;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    border-radius: 10px 10px 0 0;
+}
+
+.bottom {
+    border-radius: 0 0 10px 10px;
+    margin: 0 -0.1px -0.1px;
+    text-transform: none;
+    visibility: hidden;
+}
+
+.bottom p:nth-child(2) {
+    color: #9e2626;
+}
+
+.bottom p:last-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.bottom p:first-child {
+    padding-top: 5px;
+}
+
+h3 {
+    margin-top: 0;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+
+label {
+    width: 90px;
+    text-align: left;
+}
+
+input,
+select {
+    font-size: 1em;
+    width: 300px;
+    border: 1px solid #999;
+}
+
+input:focus,
+select:focus {
+    border-color: #000;
+}
+
+button {
+    box-shadow: inset 0px 1px 0px 0px #dcecfb;
+    background-color: #36acc9;
+    border-radius: 6px;
+    border: 1px solid #7cbecf;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+    margin: 30px auto;
+}
+
+button:hover {
+    background-color: #7ebecf;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+input::placeholder {
+    color: #b32b2b;
+    font-size: 0.9em;
+    padding-left: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
