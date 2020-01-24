@@ -1,1 +1,1 @@
-# tip-calculator
+# tip-calculator, in lithuanian
