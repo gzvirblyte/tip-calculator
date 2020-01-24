@@ -11,7 +11,7 @@
 <body>
     <main>
         <div class="container">
-            <header class="top">
+            <header class="header">
                 <h3>Arbatpinigių skaičiuoklė</h3>
             </header>
             <main>
@@ -19,7 +19,7 @@
                     <ul>
                         <li>
                             <label for="amount">Sąskaitos suma:</label>
-                            <input type="text" id="amount" name="amount" placeholder="Sąskaitos suma (eur)">
+                            <input type="number" id="amount" name="amount" placeholder="Sąskaitos suma (eur)">
                         </li>
                         <li>
                             <label for="service-eval">Įvertinkite aptarnavimą:</label>
@@ -34,16 +34,13 @@
                         </li>
                         <li>
                             <label for="number-of-people">Žmonių skaičius:</label>
-                            <input type="text" id="number-of-people" name="number-of-people" placeholder="Žmonių skaičius">
+                            <input type="number" id="number-of-people" name="number-of-people" placeholder="Žmonių skaičius">
                         </li>
                     </ul>
                 </form>
                 <button>SKAIČIUOK</button>
             </main>
-            <footer id="footer" class="bottom">
-                <p>Arbatpinigiai</p>
-                <p id="tip"></p>
-                <p>kiekvienam!</p>
+            <footer id="footer" class="footer">
             </footer>
 
         </div>

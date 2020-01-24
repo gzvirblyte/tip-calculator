@@ -7,7 +7,7 @@ body {
 
 .container {
     width: 350px;
-    height: 475px;
+    height: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,8 +17,8 @@ body {
     box-shadow: 0px 0px 5px 5px rgba(96, 107, 125, 0.7);
 }
 
-.top,
-.bottom {
+header,
+footer {
     text-align: center;
     margin: -0.1px -0.1px 2em -0.1px;
     background-color: #194d59;
@@ -28,25 +28,14 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-.bottom {
+footer {
+    height: 101px;
     border-radius: 0 0 10px 10px;
-    margin: 0 -0.1px -0.1px;
+    margin: 0 -0.1px 0 -0.1px;
     text-transform: none;
-    visibility: hidden;
-}
-
-.bottom p:nth-child(2) {
-    color: #9e2626;
-}
-
-.bottom p:last-of-type {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 5px;
-}
-
-.bottom p:first-child {
-    padding-top: 5px;
+    padding: 5px 0;
+    color:#fff;
+    display: none;
 }
 
 h3 {
