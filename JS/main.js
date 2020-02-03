@@ -1,5 +1,6 @@
 var form = document.forms["form"];
 var calculateBtn = document.querySelector("button");
+var container = document.querySelector(".container");
 
 calculateBtn.addEventListener("click", calculateTip);
 
@@ -16,13 +17,11 @@ function calculateTip() {
     } else {
         tip = (amount * serviceEval / 100) / numberOfPeople;
         var tipBox = document.createElement("p");
-        tipBox.innerHTML = "Arbatpinigiai<br>" + "Po " + tip.toFixed(2) + " eur<br>" + "kiekvienam!";
+        tipBox.innerHTML = "Arbatpinigiai<br>" + "Po " + tip.toFixed(2) + " eur<br>" + "kiekvienam!";        
         var footer = document.getElementById("footer");
         footer.appendChild(tipBox);
         footer.style.display = "block";
-        document.querySelector(".container").style.height = "475px";
+        calculateBtn.removeEventListener("click", calculateTip);
     }
-    calculateBtn.removeEventListener("click", calculateTip);
+
 }
-
-
