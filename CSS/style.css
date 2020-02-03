@@ -29,12 +29,12 @@ footer {
 }
 
 footer {
-    height: 101px;
+    height: 100px;
     border-radius: 0 0 10px 10px;
     margin: 0 -0.1px 0 -0.1px;
     text-transform: none;
     padding: 5px 0;
-    color:#fff;
+    color: #fff;
     display: none;
 }
 
@@ -103,4 +103,47 @@ input::placeholder {
     padding-left: 5px;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
+}
+
+/******************
+    MEDIA QUERIES
+******************/
+
+@media only screen and (max-width:800px) {
+    .container {
+        width: 400px;
+        height: 450px;
+    }
+
+    li {
+        margin-left: 3em;
+    }
+}
+
+@media all and (max-width:600px) {
+    .container {
+        width: 450px;
+        height: 600px;
+    }
+
+    header,
+    footer {
+        font-size: 1.8em;
+        padding: 0 10px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    input,
+    select,
+    label,
+    button {
+        font-size: 1.4em;
+    }
+
+    li {
+        margin-left: 5em;
+    }
 }
